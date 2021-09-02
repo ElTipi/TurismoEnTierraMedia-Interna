@@ -1,12 +1,15 @@
 package turismoEnTierraMedia;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class Producto {
 
 	private String nombre;
 	private int costo;
 	private double tiempo;
 	private String tipo;
-	private String[] productos;
+	private List<String> productos;
 	
 
 	public Producto(String nombre, int costo, double tiempo, String tipo) {
@@ -14,7 +17,7 @@ public abstract class Producto {
 		this.costo = costo;
 		this.tiempo = tiempo;
 		this.tipo = tipo;
-		this.productos = new String[0];
+		this.productos = new ArrayList<String>();
 	}
 
 	public Producto() {		
